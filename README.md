@@ -1,8 +1,8 @@
 # React Chart.js Wrapper
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+[![Build Status](https://travis-ci.org/aomran/react-chartjs-wrapper.svg?branch=master)](https://travis-ci.org/aomran/react-chartjs-wrapper)
+[![npm version](https://badge.fury.io/js/react-chartjs-wrapper.svg)](https://badge.fury.io/js/react-chartjs-wrapper)
+[![Coverage Status](https://coveralls.io/repos/github/aomran/react-chartjs-wrapper/badge.svg)](https://coveralls.io/github/aomran/react-chartjs-wrapper)
 
 This is a simple wrapper for [ChartJS](http://www.chartjs.org/) as a React.js component.
 
@@ -14,7 +14,7 @@ $ npm install react-chartjs-wrapper --save
 
 ### Usage
 
-```
+```javascript
 import React from 'react';
 import ChartJS from 'react-chartjs-wrapper';
 
@@ -43,12 +43,3 @@ class ParentComponent extends React.Component {
   }
 }
 ```
-
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/aomran/react-chartjs-wrapper
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/react-chartjs-wrapper
-
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
