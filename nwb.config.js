@@ -7,6 +7,7 @@ module.exports = {
   webpack: {
     compat: {
       enzyme: true,
+      sinon: true,
     },
   },
 };

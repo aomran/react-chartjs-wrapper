@@ -1,7 +1,7 @@
 {
   "name": "react-chartjs-wrapper",
   "version": "2.6.0",
-  "description": "react-chartjs-wrapper React component",
+  "description": "Simple React.js component for Chart.js",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -20,16 +20,19 @@
     "lint": "eslint --ext .jsx,.js src tests",
     "lint:fix": "npm run lint -- --fix"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aomran/react-chartjs-wrapper.git"
+  },
   "dependencies": {
-    "chart.js": "^2.6.0",
-    "enzyme": "^2.9.1",
-    "expect": "^1.20.2",
+    "chart.js": "2.6.0",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
     "react": "15.x"
   },
   "devDependencies": {
+    "enzyme": "^2.9.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.2",
     "eslint-plugin-import": "^2.7.0",
@@ -38,13 +41,18 @@
     "nwb": "0.18.x",
     "react": "^15.6.1",
     "react-addons-test-utils": "^15.6.0",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "sinon": "^2.3.7",
+    "expect": "^1.20.2"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Ahmed Omran",
   "license": "MIT",
-  "repository": "",
   "keywords": [
-    "react-component"
-  ]
+    "react-component",
+    "chart.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/aomran/react-chartjs-wrapper/issues"
+  },
+  "homepage": "https://github.com/aomran/react-chartjs-wrapper"
 }

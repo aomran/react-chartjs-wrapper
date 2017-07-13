@@ -13,16 +13,22 @@ class ChartJS extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props !== nextProps) {
-      const chart = this.chart_instance;
-      chart.config.data = nextProps.data;
-      chart.config.options = nextProps.options;
-      chart.update();
+    const dataChanged = this.props.data !== nextProps.data;
+    const optionsChanged = this.props.options !== nextProps.options;
+    if (dataChanged || optionsChanged) {
+      this.updateChart(nextProps);
     }
   }
 
   componentWillUnmount() {
     this.chart_instance.destroy();
+  }
+
+  updateChart(nextProps) {
+    const chart = this.chart_instance;
+    chart.config.data = nextProps.data;
+    chart.config.options = nextProps.options;
+    chart.update();
   }
 
   render() {

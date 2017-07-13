@@ -1,6 +1,7 @@
 import expect from 'expect';
 import React from 'react';
 import { mount } from 'enzyme';
+import sinon from 'sinon';
 import ChartJS from '../src/';
 
 function chartDataFactory(data = [10, 20, 30]) {
@@ -52,7 +53,15 @@ describe('Component Unmounting', () => {
 });
 
 describe('Component Re-rendering', () => {
-  it('changes chart data', () => {
+  beforeEach(() => {
+    sinon.spy(ChartJS.prototype, 'updateChart');
+  });
+
+  afterEach(() => {
+    ChartJS.prototype.updateChart.restore();
+  });
+
+  it('updates chart with new data', () => {
     const data = chartDataFactory();
     const wrapper = mount(<ChartJS type="line" data={data} />);
     const component = wrapper.instance();
@@ -62,6 +71,16 @@ describe('Component Re-rendering', () => {
     const newData = chartDataFactory([10, 20, 60]);
     wrapper.setProps({ data: newData, type: 'line' });
 
+    expect(ChartJS.prototype.updateChart.calledOnce).toEqual(true);
     expect(component.chart_instance.config.data).toBe(newData);
+  });
+
+  it('does not update chart if data doesnt change', () => {
+    const data = chartDataFactory();
+    const wrapper = mount(<ChartJS type="line" data={data} />);
+
+    wrapper.setProps({ data, type: 'line' });
+
+    expect(ChartJS.prototype.updateChart.calledOnce).toEqual(false);
   });
 });
