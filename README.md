@@ -11,6 +11,53 @@ This is a simple wrapper for [ChartJS](http://www.chartjs.org/) as a React.js co
 ```
 $ npm install react-chartjs-wrapper --save
 ```
+$ npm install react-chartjs-wrapper --save
+``````
+$ npm install react-chartjs-wrapper --save
+``````
+$ npm install react-chartjs-wrapper --save
+``````
+```
+$ npm install react-chartjs-wrapper --save
+```
+```
+$ npm install react-chartjs-wrapper --save
+```
+```
+``````
+$ npm install react-chartjs-wrapper --save
+``````
+$ npm install react-chartjs-wrapper --save
+``````
+$ npm install react-chartjs-wrapper --save
+```
+$ npm install react-chartjs-wrapper --save
+```
+```
+$ npm install react-chartjs-wrapper --save
+```
+```
+$ npm install re
+$ npm install react-chartjs-wrapper --save
+```
+```
+$ npm install react-chartjs-wrapper --save
+```
+```
+$ npm install re
+
+
+```
+$ npm install react-chartjs-wrapper --save
+```
+
+```
+$ npm install react-chartjs-wrapper --save
+```
+
+```
+$ npm install react-chartjs-wrapper --save
+```
 
 ### Usage
 
