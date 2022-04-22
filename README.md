@@ -24,6 +24,11 @@ $ npm install react-chartjs-wrapper --save
 $ npm install react-chartjs-wrapper --save
 ```
 ```
+``````
+$ npm install react-chartjs-wrapper --save
+``````
+$ npm install react-chartjs-wrapper --save
+``````
 $ npm install react-chartjs-wrapper --save
 ```
 $ npm install react-chartjs-wrapper --save
